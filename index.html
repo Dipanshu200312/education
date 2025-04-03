@@ -5,8 +5,21 @@
 <head>
         <!-- meta tag -->
         <meta charset="utf-8">
-        <title>Edulearn | Responsive Education HTML5 Template</title>
-        <meta name="description" content="">
+		<title>Advance Your Career with AAFM Online Courses | AAFM® India</title>
+		<meta name="description" content="Enroll in AAFM Online Courses to master wealth strategies, estate planning & investments. Get certified and boost your financial expertise. Enquire Now!">
+		
+		<!-- Open Graph Meta Tags -->
+		<meta property="og:title" content="Advance Your Career with AAFM Online Courses | AAFM® India">
+		<meta property="og:description" content="Enroll in AAFM Online Courses to master wealth strategies, estate planning & investments. Get certified and boost your financial expertise. Enquire Now!">
+		<meta property="og:image" content="https://www.aafmindia.co.in/online-courses-in-india/path-to-image.jpg"> <!-- Replace with your image URL -->
+		<meta property="og:url" content="https://www.aafmindia.co.in/online-courses-in-india"> <!-- Replace with your page URL -->
+		<meta property="og:type" content="website">
+		
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Advance Your Career with AAFM Online Courses | AAFM® India">
+		<meta name="twitter:description" content="Enroll in AAFM Online Courses to master wealth strategies, estate planning & investments. Get certified and boost your financial expertise. Enquire Now!">
+		<meta name="twitter:image" content="https://www.aafmindia.co.in/online-courses-in-india/path-to-image.jpg"> <!-- Replace with your image URL -->
         <!-- responsive tag -->
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,13 +70,7 @@
     </head>
     <body class="home1">
         <!--Preloader area start here-->
-        <div class="book_preload">
-            <div class="book">
-                <div class="book__page"></div>
-                <div class="book__page"></div>
-                <div class="book__page"></div>
-            </div>
-        </div>
+       
 		<!--Preloader area end here-->
 		
         <!--Full width header Start-->
@@ -87,7 +94,7 @@
 										<li><a href="https://www.facebook.com/aafm.in" target="_blank"><i class="fa fa-facebook"></i></a></li>
 										<li><a href="https://x.com/AafmIndia" target="_blank"><i class="fa fa-twitter"></i></a></li>
 										<li><a href="https://www.instagram.com/aafm.india/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-										<li><a href="https://www.linkedin.com/company/aafmindia/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="https://www.linkedin.com/company/aafmindia/" target="_blank"><i class="edin"></i></a></li>
 										<li><a href="https://www.youtube.com/@AAFMIndiachannel" target="_blank"><i class="fa fa-youtube"></i></a></li>
 									</ul>
 								</div>
@@ -160,14 +167,14 @@
 			</div>
 			<div class="aafm-banner-form">
 				<h2>Get More Information</h2>
-				<form>
-					<input type="text" name="name" placeholder="Your Name" required>
-					<input type="email" name="email" placeholder="Your Email ID" required>
-					<input type="tel" name="number" placeholder="Your Phone Number" required onkeypress="return isNumberKey(event)" oninput="validatePhoneNumber(this)">
+				<form action="mail.php" method="GET">
+					<input type="text" name="MasterInner_txtName" placeholder="Your Name" required>
+					<input type="email" name="MasterInner_txtEmail" placeholder="Your Email ID" required>
+					<input type="tel" name="MasterInner_txtMobile" placeholder="Your Phone Number" required onkeypress="return isNumberKey(event)" oninput="validatePhoneNumber(this)">
 				
 					
 					<div class="g-recaptcha" data-sitekey="6LfvNMsUAAAAABK7t3ucXGRBaUTcHcUR6QvCiQTY"></div>
-					<button type="submit" class="aafm-btn submit-form">Submit</button>
+					<button type="submit" name="MasterInner_submit" class="aafm-btn submit-form">Submit</button>
 				</form>
 			</div>
 		</section>
@@ -197,7 +204,7 @@
                     	    <div class="services-desc">
                     	        <h4 class="services-title">Trusted by Top Universities</h4>
                     	        <p>Certification endorsed by top 800+ companies
-								</p><br>
+								</p>
                     	    </div>
                     	</div>
                     </div>
@@ -361,15 +368,15 @@
 			                <div class="cource-item">
 			                    <div class="cource-img">
 			                        <img src="images/courses/1.jpg" alt="" />
-                                    <a class="image-link" href="courses-details.html" title="University Tour 2018">
-                                        <i class="fa fa-link"></i>
+                                    <a class="image-link"  title="University Tour 2018">
+                                        <i class=""></i>
                                     </a>
 			                      
 			                    </div>
 			                    <div class="course-body">
-			                    	<a href="#" class="course-category">CWM®	
+			                    	<a href="#" class="course-category" style="color: black;">CWM®	
 									</a>
-			                    	<h4 class="course-title"><a href="courses-details.html">Chartered Wealth Manager®
+			                    	<h4 class="course-title"><a >Chartered Wealth Manager®
 									</a></h4>
 			                    	<div class="review-wrap">
 			                    		<ul class="rating">
@@ -410,13 +417,13 @@
 			                <div class="cource-item">
 			                    <div class="cource-img">
 			                        <img src="images/courses/2.jpg" alt="" />
-                                    <a class="image-link" href="courses-details.html" title="University Tour 2018">
-                                        <i class="fa fa-link"></i>
+                                    <a class="image-link"  title="University Tour 2018">
+                                        <i class=""></i>
                                     </a>
 			                      
 			                    </div>
 			                    <div class="course-body">
-			                    	<a href="#" class="course-category">CTEP®
+			                    	<a href="#" class="course-category"style="color: black;">CTEP®
 									</a>
 			                    	<h4 class="course-title"><a href="">Chartered Trust & Estate Planner®
 									</a></h4>
@@ -457,13 +464,13 @@
 			                <div class="cource-item">
 			                    <div class="cource-img">
 			                        <img src="images/courses/3.jpg" alt="" />
-                                    <a class="image-link" href="courses-details.html" title="University Tour 2018">
-                                        <i class="fa fa-link"></i>
+                                    <a class="image-link"  title="University Tour 2018">
+                                        <i class=""></i>
                                     </a>
 			                      
 			                    </div>
 			                    <div class="course-body">
-			                    	<a href="#" class="course-category">AFA®
+			                    	<a href="#" class="course-category"style="color: black;">AFA®
 									</a>
 			                    	<h4 class="course-title"><a href="">Accredited Financial Analyst®</a></h4>
 			                    	<div class="review-wrap">
@@ -503,13 +510,13 @@
 							<div class="cource-item">
 			                    <div class="cource-img">
 			                        <img src="images/courses/2.jpg" alt="" />
-                                    <a class="image-link" href="courses-details.html" title="University Tour 2018">
-                                        <i class="fa fa-link"></i>
+                                    <a class="image-link"  title="University Tour 2018">
+                                        <i class=""></i>
                                     </a>
 			                      
 			                    </div>
 			                    <div class="course-body">
-			                    	<a href="#" class="course-category">Ch.E.® 
+			                    	<a href="#" class="course-category"style="color: black;">Ch.E.® 
 
 									</a>
 			                    	<h4 class="course-title"><a href="">Chartered Economist® 
@@ -554,13 +561,13 @@
 							<div class="cource-item">
 			                    <div class="cource-img">
 			                        <img src="images/courses/2.jpg" alt="" />
-                                    <a class="image-link" href="courses-details.html" title="University Tour 2018">
-                                        <i class="fa fa-link"></i>
+                                    <a class="image-link"  title="University Tour 2018">
+                                        <i class=""></i>
                                     </a>
 			                      
 			                    </div>
 			                    <div class="course-body">
-			                    	<a href="#" class="course-category">CFOM®
+			                    	<a href="#" class="course-category"style="color: black;">CFOM®
 
 
 									</a>
@@ -1153,7 +1160,7 @@
                         <p class="white-color">Schedule a call with our expert today
 						</p>
                     </div>
-				    <a class="cta-button" href="#">Make a call
+				    <a class="cta-button" href="tel:011 45120800">Make a call
 					</a>
 				</div>
             </div>
@@ -1450,13 +1457,14 @@
 			<div class="popup-overlay">
 				<div class="popup-form">
 					<button class="close-btn">&times;</button>
+					<form action="mail.php" method="GET">
 					<h2>Download Brochure</h2>
-					<input type="text" placeholder="Name" required>
-					<input type="email" placeholder="Email" required>
-					<input type="tel" placeholder="Phone" required onkeypress="return isNumberKey(event)" oninput="validatePhoneNumber(this)">
+					<input type="text"name="f_name" placeholder="Name" required>
+					<input type="email"name="f_email"  placeholder="Email" required>
+					<input type="tel" name="f_phone" placeholder="Phone" required onkeypress="return isNumberKey(event)" oninput="validatePhoneNumber(this)">
 					<div class="g-recaptcha" data-sitekey="6LfvNMsUAAAAABK7t3ucXGRBaUTcHcUR6QvCiQTY"></div>
-					<button class="submit-btn">Submit</button>
-				</div>
+					<button class="submit-btn" name="submitpop">Submit</button>
+				</form></div>
 			</div>
 		
 			<!-- Footer Top -->
@@ -1506,7 +1514,7 @@
 							<ul>
 								<li><a href="https://www.facebook.com/aafm.in" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
 <li><a href="https://www.instagram.com/aafm.india/" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
-<li><a href="https://www.linkedin.com/company/aafmindia/" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+<li><a href="https://www.linkedin.com/company/aafmindia/" target="_blank"><i class="edin"></i> LinkedIn</a></li>
 <li><a href="https://x.com/AafmIndia" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
 <li><a href="https://www.youtube.com/@AAFMIndiachannel" target="_blank"><i class="fa fa-youtube"></i> YouTube</a></li>
 							</ul>
@@ -1590,7 +1598,7 @@
                     <ul class="list-unstyled">
                         <li class="sub-nav"><a href="courses.html">Courses<span class="icon"></span></a></li>
                         <li class="sub-nav"><a href="courses2.html">Courses Two<span class="icon"></span></a></li>
-                        <li class="sub-nav"><a href="courses-details.html">Courses Details<span class="icon"></span></a></li>
+                        <li class="sub-nav"><a >Courses Details<span class="icon"></span></a></li>
                     </ul>
                 </li>
                 <!--Courses Menu End-->
