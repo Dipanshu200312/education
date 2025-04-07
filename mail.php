@@ -243,7 +243,7 @@ curl_close($ch);
 
 
 
-elseif(isset($_REQUEST['submitpop']))		
+elseif(isset($_GET['submitpop']))		
 
 {
 
@@ -253,50 +253,33 @@ elseif(isset($_REQUEST['submitpop']))
     $utmTerm = isset($_GET['utm_term']) ? $_GET['utm_term'] : '';
     $utmContent = isset($_GET['utm_content']) ? $_GET['utm_content'] : '';
 
-	$name 	= $_REQUEST["f_name"];
+	$name 	= $_GET["f_name"];
 
-	$phone 	= $_REQUEST["f_phone"];
+	$phone 	= $_GET["f_phone"];
 
-	// $msg 	=$_REQUEST["f_msg"];
+	// $msg 	=$_GET["f_msg"];
 
-	// $message 	= $_REQUEST["message"];
+	// $message 	= $_GET["message"];
 
-	$email	= $_REQUEST["f_email"];
+	$email	= $_GET["f_email"];
 
-	$from_page=$from_page."brochure_download";
+	$brochure = isset($_GET['brochure']) ? $_GET['brochure'] : 'default.pdf';  
 
+    $subject = $name." has Submitted request in financial-advisor-training-course Download Brochure";  
 
-
-
-
-	$subject = $name." has Submitted request in financial-advisor-training-course Download Brochure";
-
-	$body="<html><head><title>Flabindia Form</title></head><body>
-
-		<table width='450'border='1' rules='none' frame='box'>
-
-		<tr bgcolor='#b0e1c6'><td align='center' colspan='2'>financial-advisor-training-course Download Brochure</td></tr>
-
-		<tr><td>Name</td><td>".$name."</td></tr>
-
-		<tr><td>Email</td><td>".$email."</td></tr>
-
-		<tr><td>Contact No</td><td>".$phone."</td></tr>
-
-	
-
-		
-
-		<tr><td>From URL</td><td>".$Source."</td></tr>
-		<tr><td>utmSource</td><td>".$utmSource ."</td></tr>
-		<tr><td>utmMedium </td><td>".$utmMedium."</td></tr>
-		<tr><td>utmCampaign</td><td>".$utmCampaign."</td></tr>
-		<tr><td>utmConteny</td><td>".$utmContent."</td></tr>
-		<tr><td>utmTerm</td><td>".$utmTerm."</td></tr>
-
-		<tr bgcolor='#b0e1c6'><td colspan='2' align='center'>Thanks</td></tr>
-
-		</table></body></html>";
+    $body="<html><head><title>Flabindia Form</title></head><body>  
+        <table width='450' border='1' rules='none' frame='box'>  
+        <tr bgcolor='#b0e1c6'><td align='center' colspan='2'>financial-advisor-training-course Download Brochure</td></tr>  
+        <tr><td>Name</td><td>".$name."</td></tr>  
+        <tr><td>Email</td><td>".$email."</td></tr>  
+        <tr><td>Contact No</td><td>".$phone."</td></tr>  
+        <tr><td>utmSource</td><td>".$utmSource ."</td></tr>  
+        <tr><td>utmMedium </td><td>".$utmMedium."</td></tr>  
+        <tr><td>utmCampaign</td><td>".$utmCampaign."</td></tr>  
+        <tr><td>utmContent</td><td>".$utmContent."</td></tr>  
+        <tr><td>utmTerm</td><td>".$utmTerm."</td></tr>  
+        <tr bgcolor='#b0e1c6'><td colspan='2' align='center'>Thanks</td></tr>  
+        </table></body></html>";  
 
 
 
@@ -356,9 +339,9 @@ elseif(isset($_REQUEST['submitpop']))
 
 	if ($mail->send()) {
 
-		header("location:AAFM_CWM Brochure.pdf");
+		header("location:" . $brochure);  
 
-  /*
+  /*. $brochure. $brochure
 
        $lead_data = '{
 
@@ -390,7 +373,7 @@ $postData = [
     'FirstName'     => $name,
     'Email'         => $email,
     'MobileNumber'  => $phone,
-    "leadSource"    => "cwmindia.com",
+    "leadSource"    => "aafmindia.com",
     "leadCampaign"  => $utmCampaign,
     "leadChannel"   => $utmMedium,
     "field9"        => $utmTerm,
